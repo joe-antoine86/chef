@@ -1,0 +1,15 @@
+<html>
+ <head>
+ <title>Welcome to Chef!!</title>
+ </head>
+ <body>
+ <h3> Chef created web server </h3>
+ 
+ <p>
+   This Web server runs on host : <%= node["ipaddress"] %> <br>
+   OS : <%= node["os"] %> <br>
+   Total number of CPUs : <%= node["cpu"]["total"] %> with arch : <%= node["kernel"]["processor"] %>
+   
+ </p>
+ </body>
+ </html>
